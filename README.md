@@ -8,7 +8,7 @@ My repository to host some projects developed during the study of React Js
 
 ## About
 
-the projects were bootstrapped with ´Create React App´. In the project directory, you can run:
+the projects were bootstrapped with ```Create React App```. In the project directory, you can run:
 
 **yarn start**
 Runs the app in the development mode.
