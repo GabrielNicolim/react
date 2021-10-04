@@ -1,0 +1,58 @@
+.void {
+  padding: 10px;
+  margin: 2em auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 1em;
+  list-style: none;
+  padding: 1em;
+}
+
+li {
+  width: 100%;
+  background: gray;
+  margin: 5px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: .8em;
+}
+
+li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 1em;
+  background: red;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.listHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.listHeader span,
+li span {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 100%;
+}
