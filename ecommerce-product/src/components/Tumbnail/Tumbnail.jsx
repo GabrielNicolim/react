@@ -14,6 +14,9 @@ import image4Thumbnail from '../../images/image-product-4-thumbnail.jpg';
 
 import Close from '../Close/Close';
 
+// import { ReactComponent as Previous } from '../Previous/Previous';
+// import { ReactComponent as Next } from '../Next/Next';
+
 const Tumbnail = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -34,12 +37,22 @@ const Tumbnail = () => {
 
   return (
     <Container>
-      <img 
-        src={ images[selectedImage] } 
-        className='main-image' 
-        alt='product' 
-        onClick={ () => setModalIsOpen(!modalIsOpen) }
-      />
+      <span id='image-slider' >
+        {/* <button>
+          <Previous fill='black' />
+        </button> */}
+
+        <img 
+          src={ images[selectedImage] } 
+          className='main-image' 
+          alt='product' 
+          onClick={ () => setModalIsOpen(!modalIsOpen) }
+        />
+
+        {/* <button>
+          <Next fill='black' />
+        </button> */}
+      </span>
 
       {
         modalIsOpen && 

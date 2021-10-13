@@ -21,6 +21,21 @@ const Container = styled.button`
       bottom: -48px;
     }
   }
+
+  @media only screen and (max-width: 1030px) {
+    text-align: left;
+    font-weight: 700;
+    margin-top: 1em;
+    font-size: 1.3em;
+    color: ${ props => props.theme.black };
+   
+    &:hover {
+      &::after {
+        content: '';
+        background: none;
+      }
+    }
+  }
 `;
 
 export default Container;

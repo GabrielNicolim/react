@@ -27,6 +27,10 @@ const Container = styled.div`
     text-align: center;
     font-weight: 700;
   }
+  
+  @media only screen and (max-width: 1030px) {
+    width: 100%;
+  }
 `;
 
 export default Container;

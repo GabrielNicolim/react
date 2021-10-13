@@ -3,13 +3,14 @@ import styled from "styled-components";
 const Container = styled.div`
   .main-image {
       width: 80%;
+      min-width: 400px;
       border-radius: 1em;
       cursor: pointer;
     }
 
     .shadow {
       background: rgba(0, 0, 0, 0.5);
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
@@ -46,10 +47,11 @@ const Container = styled.div`
       display: flex;
       justify-content: space-between;
       width: 80%;
+      min-width: 400px;
       margin-top: 1em;
 
       img {
-        width: 20%;
+        width: 22%;
         border-radius: 1em;
         cursor: pointer;
 
@@ -57,6 +59,19 @@ const Container = styled.div`
         &:hover {
           opacity: .5;
         }
+      }
+    }
+
+    @media only screen and (max-width: 1030px) {
+      .main-image {
+        width: 100%;
+        border-radius: 0;
+        min-width: auto;
+      }
+
+      .shadow,
+      .tumb {
+        display: none;
       }
     }
 `;

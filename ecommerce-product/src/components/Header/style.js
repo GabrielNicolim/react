@@ -9,7 +9,7 @@ const Container = styled.header`
 
   .avatar {
     width: 50px;
-    margin-left: 3em;
+    margin-left: 2em;
     border-radius: 90%;
     border: 2px solid white;
 
@@ -26,11 +26,16 @@ const Container = styled.header`
     align-items: center;
   }
   
-  .left {
-    width: 50%;
-    
-    button {
-      margin-left: 4em;
+  .left { 
+    .menu-responsive,  
+    .sandwich {
+      display: none;
+    }
+
+    .menu {
+      button {
+        margin-left: 4em;
+      }
     }
   }
 
@@ -43,6 +48,57 @@ const Container = styled.header`
     bottom: 0;
     left: 0;
     background: ${ props => props.theme.grayishBlue };
+  }
+
+  @media only screen and (max-width: 1030px) {
+    padding: 1em;
+ 
+    .right {
+      width: 50%;
+    }
+
+    .right {
+      justify-content: right;
+    }
+    .left {
+      .sandwich {
+        display: flex;
+        margin-right: 1em;
+        cursor: pointer;
+      }
+
+      .shadow {
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        position: fixed;
+
+        .menu-responsive {
+          background: ${ props => props.theme.white };
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          height: 100vh;
+          position: fixed;
+          padding: 2em;
+          max-width: 300px;
+
+          .close {
+            margin-bottom: 1em;
+            cursor: pointer;
+            display: flex;
+          }
+        }
+      }
+
+      .menu {
+        display: none;
+      }
+    }
   }
 `;
 

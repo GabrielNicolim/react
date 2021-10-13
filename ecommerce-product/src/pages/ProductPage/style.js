@@ -54,6 +54,45 @@ const Container = styled.div`
       margin: 1em 0 2em 0;
     }
   }
+
+  @media only screen and (max-width: 1030px) {
+    flex-direction: column;
+    padding: 0 0 5em 0;
+
+    .left, 
+    .right {
+      width: 100%;
+    }
+
+    .right {
+      padding: 1em;
+
+      h3 {
+        margin: 1em 0;
+        font-size: 1em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.3em;
+        
+        .old-price {
+          margin: 0;
+          font-size: 1.2em;
+        }
+      }  
+    }
+  }
 `;
 
 export default Container;

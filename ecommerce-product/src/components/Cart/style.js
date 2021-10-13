@@ -11,18 +11,18 @@ const Container = styled.div`
     padding: 2px 10px;
     border-radius: 8px;
     font-size: 12px;
-    position: relative;
-    top: -15px;
-    right: 10px;
+    position: absolute;
+    top: -10px;
+    right: -15px;
   }
 
   #drop {
     background: ${ props => props.theme.white };
-    z-index: 999;
+    z-index: 99;
     position: absolute;
     right: -100px;
     bottom: -220px;
-    width: 400px; // Cuidado
+    width: 400px;
     box-shadow: 2px 2px 10px ${ props => props.theme.grayishBlue };
     padding: 1em;
 
@@ -86,6 +86,13 @@ const Container = styled.div`
           color: ${ props => props.theme.veryDarkBlue }
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: 1030px) {
+    #drop {
+      width: 340px;
+      right: -100px;
     }
   }
 `;

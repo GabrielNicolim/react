@@ -13,11 +13,18 @@ export default createGlobalStyle`
   body {
     width: 100vw;
     min-height: 100vh;
+    padding: 0 1em;
     background: ${props => props.theme.white};
   }
 
   .app {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 1030px) {
+    body {
+      padding: 0;
+    }
   }
 `;

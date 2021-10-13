@@ -26,6 +26,15 @@ const Container = styled.div`
       margin-left: 10px;
     }
   }
+
+  @media only screen and (max-width: 1030px) {
+    display: block;
+
+    #primary-button {
+      width: 100%;
+      margin-top: 1em;
+    }
+  }
 `;
 
 export default Container;

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.ef7182aa.chunk.js",
-    "main.js.map": "/static/js/main.ef7182aa.chunk.js.map",
+    "main.js": "/static/js/main.8922aebc.chunk.js",
+    "main.js.map": "/static/js/main.8922aebc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.954a3bd4.js",
     "runtime-main.js.map": "/static/js/runtime-main.954a3bd4.js.map",
     "static/js/2.1c475b98.chunk.js": "/static/js/2.1c475b98.chunk.js",
@@ -9,6 +9,7 @@
     "index.html": "/index.html",
     "static/js/2.1c475b98.chunk.js.LICENSE.txt": "/static/js/2.1c475b98.chunk.js.LICENSE.txt",
     "static/media/icon-delete.1fd1f1f7.svg": "/static/media/icon-delete.1fd1f1f7.svg",
+    "static/media/icon-menu.c6107d03.svg": "/static/media/icon-menu.c6107d03.svg",
     "static/media/image-product-1.520cc50b.jpg": "/static/media/image-product-1.520cc50b.jpg",
     "static/media/image-product-2.c8bb0aac.jpg": "/static/media/image-product-2.c8bb0aac.jpg",
     "static/media/image-product-3.af5c71ba.jpg": "/static/media/image-product-3.af5c71ba.jpg",
@@ -18,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.954a3bd4.js",
     "static/js/2.1c475b98.chunk.js",
-    "static/js/main.ef7182aa.chunk.js"
+    "static/js/main.8922aebc.chunk.js"
   ]
 }

@@ -44,7 +44,6 @@ const Cart = ({ fill, quantity }) => {
           }
         </div>
       }
-      
     </Container>
   );
 }
