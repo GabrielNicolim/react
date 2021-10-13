@@ -22,7 +22,7 @@ const Header = () => {
       
       <div className='right'>
         <Cart fill='#000' quantity={ cart.quantity } />
-        <img src={avatar} alt='avatar' />       
+        <img src={avatar} alt='avatar' className='avatar' />       
       </div>
     </Container>
   )

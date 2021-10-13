@@ -17,6 +17,11 @@ const Container = styled.div`
     width: 50px;
     height: 50px;
     font-weight: 700;
+
+    &:hover {
+      color: ${ props => props.theme.paleOrange };
+      transition: 200ms;
+    }
   }
 
   span {

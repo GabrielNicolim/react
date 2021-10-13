@@ -7,9 +7,17 @@ const Container = styled.header`
   padding: 32px 0;
   position: relative;
 
-  img {
+  .avatar {
     width: 50px;
     margin-left: 3em;
+    border-radius: 90%;
+    border: 2px solid white;
+
+    &:hover {
+      border: 2px solid ${ props => props.theme.orange };
+      transition: 200ms;
+      cursor: pointer;
+    }
   }
 
   .left, 
@@ -34,7 +42,7 @@ const Container = styled.header`
     height: 1px;
     bottom: 0;
     left: 0;
-    background: ${props => props.theme.grayishBlue};
+    background: ${ props => props.theme.grayishBlue };
   }
 `;
 

@@ -18,6 +18,10 @@ const Container = styled.div`
     padding: 1em;
     cursor: pointer;
 
+    &:hover {
+      background: ${ props => props.theme.paleOrange };
+    }
+
     span {
       margin-left: 10px;
     }

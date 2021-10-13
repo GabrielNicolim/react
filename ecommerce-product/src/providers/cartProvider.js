@@ -7,8 +7,20 @@ export const CartProvider = ({ children }) => {
     quantity: 0,
   })
 
+  function setQuantity(quantity) {
+    setCart({
+      quantity: cart.quantity + quantity,
+    })
+  }
+
+  function removeItem() {
+    setCart({
+      quantity: 0,
+    })
+  }
+
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
+    <CartContext.Provider value={{ quantity: cart.quantity, setQuantity, removeItem }}>
       { children }
     </CartContext.Provider>
   );

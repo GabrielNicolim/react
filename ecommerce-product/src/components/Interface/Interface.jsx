@@ -1,11 +1,11 @@
 import Count from '../Count/Count';
 import Container from './style';
 import Cart from '../Cart/icon-cart';
-import { useState } from 'react';
-import { useCart } from '../../providers/cartProvider';
+import { useContext, useState } from 'react';
+import { CartContext } from '../../providers/cartProvider';
 
 const Interface = () => {
-  const { setCart } = useCart();
+  const { setQuantity } = useContext(CartContext);
   const [counter, setCounter] = useState(0);
   
   function changeCounterValue (state, type) {
@@ -21,15 +21,10 @@ const Interface = () => {
     }
   }
 
-  const handleSet = () => {
-    const quantity = { quantity: counter }; 
-    setCart(quantity);
-  }
-
   return (
     <Container>
       <Count counter={ counter } changeCounterValue={ changeCounterValue } />
-      <button id='primary-button' onClick={handleSet}>
+      <button id='primary-button' onClick={ () => setQuantity(counter) } >
         <Cart fill='#FFF' />
         <span>Add to Cart</span>
       </button>

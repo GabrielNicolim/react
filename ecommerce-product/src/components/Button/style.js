@@ -9,6 +9,8 @@ const Container = styled.button`
   position: relative;
   
   &:hover {
+    color: ${ props => props.theme.black };
+    
     &::after {
       content: '';
       background: ${ props => props.theme.orange };

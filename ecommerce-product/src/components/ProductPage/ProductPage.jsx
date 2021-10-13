@@ -1,7 +1,7 @@
 import Container from "./style";
 import Interface from "../Interface/Interface";
-
 import mainImage from '../../images/image-product-1.jpg'
+
 const ProductPage = () => {
   return (
     <Container>
