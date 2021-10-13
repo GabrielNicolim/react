@@ -14,8 +14,8 @@ import image4Thumbnail from '../../images/image-product-4-thumbnail.jpg';
 
 import Close from '../Close/Close';
 
-// import { ReactComponent as Previous } from '../Previous/Previous';
-// import { ReactComponent as Next } from '../Next/Next';
+import Previous  from '../Previous/Previous';
+import Next  from '../Next/Next';
 
 const Tumbnail = () => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -35,12 +35,22 @@ const Tumbnail = () => {
     image4Thumbnail
   ]
 
+  function previousImage() {
+    if(selectedImage === 0) setSelectedImage(3);
+    else setSelectedImage(selectedImage - 1);
+  }
+
+  function nextImage() {
+    if(selectedImage === 3) setSelectedImage(0);
+    else setSelectedImage(selectedImage + 1);
+  } 
+
   return (
     <Container>
       <span id='image-slider' >
-        {/* <button>
+        <button className='previous' onClick={ () => previousImage() }>
           <Previous fill='black' />
-        </button> */}
+        </button> 
 
         <img 
           src={ images[selectedImage] } 
@@ -49,9 +59,9 @@ const Tumbnail = () => {
           onClick={ () => setModalIsOpen(!modalIsOpen) }
         />
 
-        {/* <button>
+        <button className='next' onClick={ () => nextImage() }>
           <Next fill='black' />
-        </button> */}
+        </button> 
       </span>
 
       {

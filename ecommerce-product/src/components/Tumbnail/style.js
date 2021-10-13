@@ -21,6 +21,12 @@ const Container = styled.div`
       align-items: center;
     }
 
+    #image-slider {
+      button {
+        display: none;
+      }
+    }
+
     .modal {
       width: 40%;
       
@@ -67,6 +73,31 @@ const Container = styled.div`
         width: 100%;
         border-radius: 0;
         min-width: auto;
+      }
+
+      #image-slider {
+        position: relative;
+
+        button {
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          border-radius: 90%;
+          border: none;
+          background: ${ props => props.theme.white };
+          z-index: 10;
+          top: -200px;
+
+          &.previous {
+            left: 10px;
+          }
+
+          &.next {
+            right: 10px;
+          }
+        }
       }
 
       .shadow,
