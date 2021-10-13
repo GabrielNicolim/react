@@ -19,7 +19,7 @@ const Container = styled.div`
     cursor: pointer;
 
     &:hover {
-      background: ${ props => props.theme.paleOrange };
+      opacity: .5;
     }
 
     span {

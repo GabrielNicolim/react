@@ -2,7 +2,7 @@ import Container from './style';
 import Button from '../Button/Button';
 import { ReactComponent as Logo } from '../../images/logo.svg';
 import avatar from '../../images/image-avatar.png';
-import Cart from '../Cart/icon-cart';
+import Cart from '../Cart/Cart';
 import { useCart } from '../../providers/cartProvider';
 
 const Header = () => {

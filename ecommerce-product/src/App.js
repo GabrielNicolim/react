@@ -1,5 +1,5 @@
 import Header from './components/Header/Header';
-import ProductPage from './components/ProductPage/ProductPage';
+import ProductPage from './pages/ProductPage/ProductPage';
 import GlobalStyle from './styles/global';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';

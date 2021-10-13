@@ -10,14 +10,6 @@ const Container = styled.div`
     width: 40%;
   }
 
-  .left {
-
-    #main-image {
-      width: 80%;
-      border-radius: 1em;
-    }
-  }
-
   .right {
     h3 {
       color: ${ props => props.theme.orange };

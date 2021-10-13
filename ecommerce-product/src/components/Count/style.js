@@ -19,8 +19,7 @@ const Container = styled.div`
     font-weight: 700;
 
     &:hover {
-      color: ${ props => props.theme.paleOrange };
-      transition: 200ms;
+      opacity: .5;
     }
   }
 

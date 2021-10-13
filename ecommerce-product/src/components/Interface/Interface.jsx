@@ -1,6 +1,6 @@
 import Count from '../Count/Count';
 import Container from './style';
-import Cart from '../Cart/icon-cart';
+import Cart from '../Cart/Cart';
 import { useContext, useState } from 'react';
 import { CartContext } from '../../providers/cartProvider';
 

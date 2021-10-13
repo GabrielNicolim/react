@@ -1,12 +1,12 @@
 import Container from "./style";
-import Interface from "../Interface/Interface";
-import mainImage from '../../images/image-product-1.jpg'
+import Interface from "../../components/Interface/Interface";
+import Tumbnail from "../../components/Tumbnail/Tumbnail";
 
 const ProductPage = () => {
   return (
     <Container>
       <div className='left'>
-        <img src={ mainImage } id='main-image' alt='product' />
+        <Tumbnail />
       </div>
 
       <div className='right'>
