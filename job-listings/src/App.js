@@ -17,6 +17,10 @@ function App() {
 
       <Container>
         {
+          !cards.length && <div>Nenhum resultado encontrado</div>
+        }
+
+        {
           cards.map((props) => {
             return(
               <Card 

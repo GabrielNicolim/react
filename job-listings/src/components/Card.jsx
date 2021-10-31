@@ -67,6 +67,7 @@ const StyledCard = styled.div`
 
     .company {
       color: ${ props => props.theme.darkCyan };
+      text-align: left;
     }
 
     .name {

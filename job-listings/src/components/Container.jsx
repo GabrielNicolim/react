@@ -14,6 +14,7 @@ const StyledContainer = styled.main`
   margin: 0 auto;
   padding: 4em 20vw;
   background: ${ props => props.theme.lightCyan };
+  text-align: center;
 `;
 
 export default Container;
